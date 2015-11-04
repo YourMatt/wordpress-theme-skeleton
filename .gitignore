@@ -1,0 +1,8 @@
+# Dev Tools #
+#############
+.idea/
+
+# OS Generate Files #
+#####################
+*.DS_Store
+[Tt]humbs.db
