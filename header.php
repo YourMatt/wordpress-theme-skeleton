@@ -37,8 +37,7 @@
       <div id="navbar" class="navbar">
          <nav id="site-navigation" class="navigation main-navigation" role="navigation">
             <button class="menu-toggle">Menu</button>
-            <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
-            <? pced_build_nav_menu (); ?>
+            <?= THEMENAME_build_nav_menu () ?>
          </nav>
       </div>
 

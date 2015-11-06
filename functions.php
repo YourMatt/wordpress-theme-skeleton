@@ -19,4 +19,22 @@ function THEMENAME_scripts_styles () {
 
 }
 
+// return the navigation menu, allowing for updates on the fly
+function THEMENAME_build_nav_menu () {
+
+   // load the menu
+   $nav_menu_attributes = array (
+      'theme_location' => 'primary',
+      'menu_class' => 'nav-menu',
+      'echo' => false
+   );
+   $menu = wp_nav_menu ($nav_menu_attributes);
+
+   // apply changes to menu
+
+   // display the menu
+   print $menu;
+
+}
+
 ?>
