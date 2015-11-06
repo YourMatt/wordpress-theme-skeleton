@@ -1,0 +1,13 @@
+
+@media screen and (max-width: $width-max-phone) {
+
+  .site {
+    width: 100%;
+  }
+  nav {
+    .menu-toggle {
+      display: block;
+    }
+  }
+
+}

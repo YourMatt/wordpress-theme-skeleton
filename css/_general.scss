@@ -1,0 +1,8 @@
+
+a {
+  @extend %shadow-dark-text;
+  color: $color-text-primary;
+  &:hover {
+
+  }
+}

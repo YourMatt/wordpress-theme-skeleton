@@ -1,16 +1,14 @@
 
 /* VARIABLES
-—————————————————————————————————————————————————————————————————————————————*/
-
+******************************************************************************/
 $color-text-primary:  #000000;
-
 $width-large:         1125px;
-
+$width-max-phone:     600px;
+$width-max-tablet:    1125px;
 $image-logo:          url(../images/header-logo.png);
 
 /* MIXINS
-—————————————————————————————————————————————————————————————————————————————*/
-
+******************************************************************************/
 @mixin image-button ($url, $width, $height, $background-size: $width, $background-left: 0px, $background-right: 0px) {
   display: inline-block;
   width: $width;
@@ -21,52 +19,35 @@ $image-logo:          url(../images/header-logo.png);
   background-position: $background-left $background-right;
   text-indent: -9999px;
 }
-
 @mixin animation-fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
 /* PARTIALS
-—————————————————————————————————————————————————————————————————————————————*/
-
+******************************************************************************/
 %shadow-dark-text {
   text-shadow: 0px 2px 1px rgba(0,0,0,0.75);
 }
 
-
 /* GENERAL STYLES
-—————————————————————————————————————————————————————————————————————————————*/
+******************************************************************************/
+@import "reset";
+@import "general";
+@import "structure";
 
-a {
-  @extend %shadow-dark-text;
-  color: $color-text-primary;
-  &:hover {
+/* TEMPLATE ELEMENTS
+******************************************************************************/
+@import "header";
+@import "footer";
 
-  }
-}
-
-
-/* HEADER
-—————————————————————————————————————————————————————————————————————————————*/
-
-.site-header {
-  position: relative;
-  width: $width-large;
-  height: 190px;
-  margin: 0px auto;
-  z-index: 1;
-
-  .home-link {
-    @include image-button($image-logo, 311px, 105px);
-    background-image: $image-logo;
-  }
-}
-
+/* RESPONSIVE ADJUSTMENT
+******************************************************************************/
+@import "phone";
+@import "tablet";
 
 /* ANIMATIONS
-—————————————————————————————————————————————————————————————————————————————*/
-
+******************************************************************************/
 @-webkit-keyframes menuFadeIn {
   @include animation-fade-in;
 }

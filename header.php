@@ -2,15 +2,7 @@
 // set variables for use in the header
 
 ?><!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" <? language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" <? language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 7) & !(IE 8)]><!-->
 <html <? language_attributes(); ?>>
-<!--<![endif]-->
 <head>
    <meta charset="<? bloginfo( 'charset' ); ?>"/>
    <meta name="viewport" content="width=device-width"/>
@@ -34,8 +26,8 @@
          <? bloginfo ('name'); ?>
       </a>
 
-      <div id="navbar" class="navbar">
-         <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+      <div class="navbar">
+         <nav role="navigation">
             <button class="menu-toggle">Menu</button>
             <?= THEMENAME_build_nav_menu () ?>
          </nav>

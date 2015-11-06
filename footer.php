@@ -4,14 +4,11 @@
 ?>
 
 </div>
-<footer id="colophon" class="site-footer" role="contentinfo">
-   <? get_sidebar ('main'); ?>
-</footer>
-<div class="site-sub-footer">
+<footer class="footer">
    <div class="copyright">Copyright <?= date ('Y') ?> - <? bloginfo ('name'); ?></div>
    <div class="links">
    </div>
-</div>
+</footer>
 </div>
 
 <? wp_footer(); ?>

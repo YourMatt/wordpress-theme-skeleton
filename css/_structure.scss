@@ -1,0 +1,14 @@
+
+body {
+  background-color: ghostwhite;
+}
+
+.site {
+  background-color: lightcyan;
+  width: $width-large;
+  margin: 0px auto;
+
+  .navbar {
+    background-color: yellow;
+  }
+}

@@ -1,0 +1,17 @@
+
+.site-header {
+  position: relative;
+  width: 100%;
+  .home-link {
+    @include image-button($image-logo, 200px, 100px);
+    background-image: $image-logo;
+  }
+}
+
+nav {
+  position: relative;
+  .menu-toggle {
+    display: none;
+    float: right;
+  }
+}
