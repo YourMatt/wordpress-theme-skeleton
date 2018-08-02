@@ -2,6 +2,16 @@
 #############
 .idea/
 
+# Dependency Directories #
+##########################
+node_modules
+
+# Grunt Intermediate Storage #
+##############################
+.grunt
+.sass-cache
+.tscache
+
 # OS Generate Files #
 #####################
 *.DS_Store
