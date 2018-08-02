@@ -12,10 +12,10 @@ function THEMENAME_theme_setup () {
 function THEMENAME_scripts_styles () {
 
    // add javascript files
-   wp_enqueue_script ('theme-main-js', get_template_directory_uri () . '/js/main.js', array ('jquery'), '2015-11-05');
+   wp_enqueue_script ('theme-main-js', get_template_directory_uri () . '/js/main.min.js', array ('jquery'), '2018-08-02');
 
    // add stylesheets
-   wp_enqueue_style ('theme-main-css', get_template_directory_uri () . '/css/main.css', array (), '2015-11-05');
+   wp_enqueue_style ('theme-main-css', get_template_directory_uri () . '/css/main.min.css', array (), '2018-08-02');
 
 }
 

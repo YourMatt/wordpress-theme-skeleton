@@ -52,7 +52,14 @@ module.exports = function (grunt) {
                     "css/*.scss"
                 ],
                 tasks: [
-                    "sass:site",
+                    "sass:site"
+                ]
+            },
+            watch_css_files: {
+                files: [
+                    "css/main.css"
+                ],
+                tasks: [
                     "cssmin:minify_site_css"
                 ]
             },
